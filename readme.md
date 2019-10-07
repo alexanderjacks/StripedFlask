@@ -6,7 +6,7 @@
 - SQL-backed content per user (allows for transaction records)
 - deployed to AWS (public access from any device)
 
-## Installation
+## Installation thru Hello World
 `brew -v`
 + [install homebrew if needed](https://docs.brew.sh/Installation)
 ```
@@ -15,7 +15,11 @@ brew install python3
 python3 -m venv StripedFlask_v1
 source StripedFlask_v1/bin/activate
 pip install -r requirements.txt
+python3 app.py
 ```
+
++ Demo message displays in browser at [localhost:5000](localhost:5000).
+
 
 ## Dependencies // pip freeze > requirements.txt
 + bcrypt==3.1.7
