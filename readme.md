@@ -7,13 +7,15 @@
 - deployed to AWS (public access from any device)
 
 ## Installation thru Hello World
++ copy this directory, `cd` into it and then...
+
 `brew -v`
-+ [install homebrew if needed](https://docs.brew.sh/Installation)
++ ([install homebrew if needed](https://docs.brew.sh/Installation))
 ```
 brew update
 brew install python3
 python3 -m venv StripedFlask_v1
-source StripedFlask_v1/bin/activate
+source /bin/activate
 pip install -r requirements.txt
 python3 app.py
 ```
