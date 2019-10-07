@@ -15,8 +15,8 @@
 brew update
 brew install python3
 python3 -m venv StripedFlask_v1
-source /bin/activate
-pip install -r requirements.txt
+source bin/activate
+pip3 install -r requirements.txt
 python3 app.py
 ```
 
