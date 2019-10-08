@@ -23,6 +23,11 @@ python3 app.py
 + Demo message displays in browser at [localhost:5000](localhost:5000).
 
 
+## Next steps, branch & PR on add:
++ SQL Alchemy for flask
++ https://stripe.com/docs/api/authentication
+
+
 ## Dependencies // pip freeze > requirements.txt
 + bcrypt==3.1.7
 + cffi==1.12.3
