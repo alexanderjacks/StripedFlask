@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Mock Site</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav justify-content-between">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Holder</a>
+            <a class="nav-item nav-link" href="#">Holder</a>
+            <a class="nav-item nav-link" href="#">Login</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-12-mobile is-half-desktop">
+                    <form action="/register" method="post">
+                        <div class="field is-grouped-centered">
+                            <div class="control">
+                                {% with messages = get_flashed_messages() %}     
+                                    {% if messages %}                            
+                                        {% for message in messages %}            
+                                            <p>{{message}}</p>                   
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endwith %}
+                                <label for="fname" class="label is-small">First Name:</label>
+                                <input type="text" name="fname" class="input is-medium is-info">
+                                <label for="lname" class="label is-small">Last Name:</label>
+                                <input type="text" name="lname" class="input is-medium is-info">
+                                <label for="email" class="label is-small">Email:</label>
+                                <input type="email" name="email" class="input is-medium is-info">
+                                <label for="password" class="label is-small">Password:</label>
+                                <input type="password" name="password" class="input is-medium is-info">
+                                <label for="confirm_password" class="label is-small">Confirm Password:</label>
+                                <input type="password" name="confirm_password" class="input is-medium is-info">
+                            </div>
+                        </div>
+                        <input type="submit" class="button is-info">
+                    </form>
+                </div>
+            </div>
+
+
+
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
