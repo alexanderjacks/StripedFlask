@@ -88,6 +88,9 @@ def add_user_to_db():
         flash("User added")
     return redirect('/')
 
+
+
+# Login route
 @app.route("/Login", methods=['POST'])
 def user_login():
 
@@ -105,6 +108,7 @@ def user_login():
             return redirect('/')
 
 
+# diplay users homepage upon login
 @app.route("/usr_home")
 def user_homepage():
 
