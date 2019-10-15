@@ -88,5 +88,32 @@ def add_user_to_db():
         flash("User added")
     return redirect('/')
 
+@app.route("/Login", methods=['POST'])
+def user_login():
+
+    instance_of_user = User.query.filter_by(email=request.form['login_email']).first()
+    print(instance_of_user)
+    if instance_of_user:
+        pw = bcrypt.check_password_hash(instance_of_user.password, request.form['login_password'])
+        if pw:
+            session['user_id'] = instance_of_user.id
+            session['user_greeting'] = instance_of_user.first_name
+            return redirect('/usr_home')
+
+        else:
+            flash('Invalid user name or password')
+            return redirect('/')
+
+
+@app.route("/usr_home")
+def user_homepage():
+
+
+    return render_template('user_home.html')
+
+
+
+
+
 if __name__ == "__main__":
         app.run(debug=True)
