@@ -1,0 +1,110 @@
+    1  sudo apt-get update -y
+    2  sudo apt-get install -ypython3 python3-venv python3-dev
+    3  sudo apt-get install -y python3 python3-venv python3-dev git nginx supervisor
+    4  clear
+    5  ls-la
+    6  ls -la
+    7  cd .ssh/
+    8  ls -la
+    9  cat authorized_keys 
+   10  clear
+   11  cd ..
+   12  clear
+   13  sudo reboot
+   14  sudo apt-get udpate -y
+   15  sudo apt-get update -y
+   16  sudo reboot
+   17  ls -la
+   18  git clone https://github.com/alexanderjacks/StripedFlask
+   19  cd StripedFlask/
+   20  ls -la
+   21  pip3 install -r requirements.txt
+   22  python3 python3-venv python3-dev nginx supervisor git
+   23  sudo apt-get -y install python3 python3-venv python3-dev nginx supervisor git 
+   24  python3 -m venv venv
+   25  pip install -r requirements.txt
+   26  sudo apt install python-pip
+   27  python3 -m venv venv
+   28  source bin/venv/activate
+   29  source bin/activate
+   30  sudo apt install python-pip
+   31  pip install -r requirements.txt
+   32  python3 -c "import uuid; print(uuid.uuid4().hex)"
+   33  ls -la
+   34  touch .env
+   35  nano .env
+   36  clear
+   37  ls -la
+   38  touch .profile
+   39  nano .profile
+   40  clear
+   41  nano .env
+   42  clear
+   43  cat .env
+   44  clear
+   45  echo "export FLASK_APP=app.py" >> .profile
+   46  cat .profile
+   47  flask run
+   48  sudo apt install python3-flask
+   49  flask run
+   50  ls -la
+   51  cat .profile 
+   52  export FLASK_APP=app.py
+   53  flask run
+   54  pip install flask_sqlalchemy
+   55  flask run
+   56  echo "export FLASK_APP=app.py" >> .profile
+   57  flask run
+   58  ls -la
+   59  cd StripedFlask/
+   60  ls -la
+   61  source bin/venv/activate
+   62  source venv/bin/activate
+   63  pip install gunicorn
+   64  python3 app.py
+   65  source venv/bin/deactivate
+   66  deactivate
+   67  python3 app.py
+   68  pip install flask_sqlalchemy
+   69  python3 app.py
+   70  source venv/bin/deactivate
+   71  source venv/bin/activate
+   72  pip install -r requirements.txt
+   73  pip list
+   74  touch wsgi.py
+   75  nano wsgi.py
+   76  clear
+   77  gunicorn --bind 0.0.0.0:5000 wsgi:application
+   78  deactivate
+   79  sudo nano /etc/systemd/system/StripedFlask.service
+   80  clear
+   81  sudo systemctl start StripedFlask
+   82  sudo systemctl enable StripedFlask
+   83  sudo nano /etc/nginx/sites-available/StripedFlask
+   84  clear
+   85  sudo ln -s /etc/nginx/sites-available/StripedFlask /etc/nginx/sites-enabled
+   86  cd /etc/nginx/sites-enabled/default
+   87  cd /etc/nginx/sites-enabled
+   88  ls -la
+   89  sudo rm /etc/nginx/sites-available/default 
+   90  sudo service nginx restart
+   91  nano systemctl status nginx.service
+   92  clear
+   93  cd ~
+   94  sudo rm /etc/nginx/sites-enabled/default 
+   95  sudo service nginx restart
+   96  exit
+   97  ls -la
+   98  ls -la
+   99  cd StripedFlask/
+  100  git add .
+  101  git commit -m ":bookmark: testing deployed instance w changed login msg"
+  102  git push origin master
+  103  aws lightsail get-instances --query instances[].name
+  104  sudo apt install awscli
+  105  aws lightsail get-instances --query instances[].name
+  106  aws configure
+  107  aws lightsail get-instances --query instances[].name
+  108  aws configure
+  109  aws lightsail get-instances --query instances[].name
+  110  history > log_of_our_lightsail_up_to_10_29_2019.txt
