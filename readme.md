@@ -19,8 +19,8 @@ brew install python3
 
 ## Typical Install
 ```
-python3 -m venv SFv1
-source SF/bin/activate
+python3 -m venv SF
+source bin/activate
 pip3 install -r requirements.txt
 python3 app.py
 ```
@@ -28,8 +28,17 @@ python3 app.py
 
 
 ## Next steps:
-SQL Alchemy for flask
-[https://stripe.com/docs/api/authentication](https://stripe.com/docs/api/authentication)
+###[Stripe API, Authentication](https://stripe.com/docs/api/authentication)
+### Deployment pipeline, likely AWS CodePipeline
++[#1](https://docs.aws.amazon.com/cli/latest/reference/deploy/register-on-premises-instance.html)
++[#2](https://stackoverflow.com/questions/54697348/how-do-i-get-the-instance-name-of-a-lightsail-instance)
+
+## Notes:
+[aws Lightsail](https://lightsail.aws.amazon.com/ls/webapp/us-west-2/instances/StripedFlask1/connect) app update cmd after `git pull`:
++ sudo service nginx restart
++ did not see expected result w/ this ⬆️, need to understand how to integrate/publish `git pull` changes
+
+[SQL Alchemy for flask](https://stripe.com/docs/api/authentication)
 
 
 ## Project Dependencies
